@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+     <img id="img" src="10000coders.png"/>
+<head>
+	<title>web_page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>
+	function myFunction(){
+		let name = document.getElementById("fname").value;
+		if(name ==""){
+			alert("Missing full name")}
+		}
+	</script>
+	<script>
+		function radio_button(){
+			if(document.getElementById("rad").checked){
+				var radio = document.getElementById("rad").value;
+				alert(radio);
+			}
+		}
+	</script>
+	<div>
+<body>
+      <h1>Welcome to 10000coders programming challenge</h1>
+      <h3>Hello guys</h3>
+      <span>Welcome to html/css programming exercise by 10000coders.This will test your basics in html and css.You need to recreate the document you are reading now using html/css.<span class="under">Make sure that the page looks exactly like this document.</span> </span>
+      <h2 class="heading2">General instructions</h2>
+      <ol type="a">
+      	<li>There will be a 15px margin between all elements in the form shown below</li>
+      	<li>Use external CSS for styling</li>
+      	<li>This exercise will cover the followingb constructs of HTML</li>
+      	<ul>
+      		<li>HTML forms</li>
+      		<li>Text inputs with placeholders</li>
+      		<li>Text area</li>
+      		<li>Password input</li>
+      		<li>Select dropdown box</li>
+      		<li>Radio buttons</li>
+      		<li>checkboxes and </li>
+      		<li>buttons</li>
+      	</ul>
+      </ol>
+
+<h2 class="heading3">So,lets get started.All the best!!</h2>
+<form>
+	<label for="fname" class="fname">First name</label>
+	<input type="text" class="fname1" name="fname" id="fname" placeholder="Enter your first name"><br><br>
+	<label for="sname" class="fname2">Surname</label>
+	<input type="text" class="fname1" name="sname" placeholder="Enter Surname"><br><br>
+	<label for="secret pin" class="spin">secret pin</label>
+	<input type="password" class="fname1" placeholder="Enter your secret pin"><br><br>
+	<label for="fname" class="gender">Gender</label>
+	<input type="radio"class="male" name="gener" value="male" id="rad" onclick="return radio_button()">
+	<label for="Gender">male</label>
+	<input type="radio" class="female" name="gener" value="female">
+	<label for ="Gender">female</label><br><br>
+	<label for="skills" class="skill"> I am an expert in</label>
+	<input type="checkbox" class="sub1" name="subject" value="html">
+	<label for="subject" class="sub">HTML</label>
+	<input type="checkbox" class="sub2" name="subject" value="css">
+	<label for="subject" class="sub2">CSS</label><br><br>
+	<label for="study" class="study">My field of study is</label>
+	<select name="field" class="field">
+	<option value="option">Select your branch using this drop-down</option>
+		      <option value="CSE">computer science engineering</option>
+		      <option value="CIV">civil engineering</option>
+		      <option value="ECE">electronics and communication engineering</option>
+		      <option value="EEE">electrical and electronics engineering</option>
+		      <option value="MEC">mechanical engineering </option><br><br>
+
+	<label for="textarea" class="area">Tell more about yourself </label>
+	<textarea class="text" rows="4" cols="50">Enter your description</textarea><br><br>
+	<input type="submit" class="submit" value="submit form" onclick="return myFunction()">      
+
+</form>
+</body>
+</div>
+</html>
